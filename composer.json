@@ -1,13 +1,12 @@
 {
-    "name": "lilith/env",
-    "description": "Common interface for HTTP messages",
+    "name": "eva/env",
+    "description": "Load env variables",
     "keywords": [],
-    "homepage": "https://github.com/panteleyR/dotenv",
-    "license": "MIT",
+    "homepage": "https://github.com/thewarmthofyourhands/dotenv",
+    "license": "proprietary",
     "authors": [
         {
-            "name": "Rost",
-            "homepage": "https://google.com/"
+            "name": "thewarmthofyourhands"
         }
     ],
     "require": {
@@ -15,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lilith\\Env\\": "src/"
+            "Eva\\Env\\": "src/"
         }
     }
 }

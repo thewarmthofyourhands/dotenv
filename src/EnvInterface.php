@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lilith\Env;
+namespace Eva\Env;
 
 interface EnvInterface
 {
