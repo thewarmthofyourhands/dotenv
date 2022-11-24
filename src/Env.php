@@ -10,9 +10,10 @@ class Env implements EnvInterface
 
     public function load(string $path): void
     {
+        $this->data = [];
         $envFile = file_get_contents($path);
         $envFile = str_replace(["\r\n", "\r"], "\n", $envFile);
-        $envData = explode('\\n', $envFile);
+        $envData = explode("\n", trim($envFile));
 
         foreach ($envData as $envStr) {
             [$env, $value] = explode('=', $envStr);
