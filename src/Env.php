@@ -16,6 +16,10 @@ class Env implements EnvInterface
         $envData = explode("\n", trim($envFile));
 
         foreach ($envData as $envStr) {
+            if ($envStr === '') {
+                continue;
+            }
+
             [$env, $value] = explode('=', $envStr);
             $this->set(trim($env), trim($value, "' \t\n\r\0\x0B"));
         }
